@@ -481,9 +481,29 @@
             </li>
           </ul>
         </div>
+        <div class="submit-email-input">
+          <label for="footer-email" class="footer-email">Subscribe</label>
+          <form class="footer-form">
+            <div class="tex-input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                class="footer-input"
+                id="footer-email"
+                placeholder="E-mail"
+              />
+            </div>
+            <button type="submit" class="email-btn">
+              Subscribe
+              <svg width="24" height="24" class="footer-icon-btn">
+                <use href="./images/icons.svg#icon-fly"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg width="8" height="8">
@@ -548,7 +568,25 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <button type="submit" class="submit-btn">Send</button>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="check-input visually-hidden"
+              value="true"
+            />
+            <label for="policy" class="check-text"
+              ><span>
+                <svg class="check-icon" height="8" width="10">
+                  <use href="./images/icons.svg#icon-vector"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="#" type="_blank" class="policy-link">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="btn-pisition">
+            <button type="submit" class="submit-btn">Send</button>
+          </div>
         </form>
       </div>
     </div>
