@@ -717,17 +717,16 @@ address {
 }
 
 .modal-close-btn {
+    position: absolute;
     width: 24px;
     height: 24px;
-    position: absolute;
-    margin-left: auto;
     top: 24px;
     right: 24px;
-    background-color: var(--CORNFLOWER, #E7E9FC);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--CORNFLOWER, #E7E9FC);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
@@ -735,25 +734,27 @@ address {
 }
 
 .modal-close-btn:hover {
-    fill: #ffffff;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #404bbf;
     border: none;
     }
 
 .modal-close-btn:focus {
+    background-color: #404bbf;
     border: none;
-    fill: #ffffff;
 }
 
 .close-icon-style {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/**
-    
-    .close-icon-style:focus {
+
+.close-icon-style:hover {
         fill: #ffffff;
-    }
-**/
+}
+
+.close-icon-style:hover {
+    fill: #ffffff;
+}
+
 
 .modal-title {
     width: 360px;
