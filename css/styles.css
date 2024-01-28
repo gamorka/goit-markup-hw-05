@@ -733,7 +733,7 @@ address {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover {
+ .modal-close-btn:hover {
     background-color: #404bbf;
     border: none;
     }
@@ -745,14 +745,13 @@ address {
 
 .close-icon-style {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #ffffff;
 }
 
-.close-icon-style:hover {
+.modal-close-btn:hover .close-icon-style {
         fill: #ffffff;
 }
 
-.close-icon-style:hover {
+.modal-close-btn:focus .close-icon-style {
     fill: #ffffff;
 }
 
