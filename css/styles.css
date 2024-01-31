@@ -782,6 +782,7 @@ address {
 
 .modal-input-wrap {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .modal-input:hover {
